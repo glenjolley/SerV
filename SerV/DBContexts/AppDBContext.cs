@@ -11,6 +11,7 @@ public class AppDBContext : DbContext
     public DbSet<Experience> Experiences { get; set; }
     public DbSet<Education> Educations { get; set; }
     public DbSet<Skills> Skills { get; set; }
+    public DbSet<ExperienceResponsibility> ExperienceResponsibilities { get; set; }
 
     public AppDBContext(DbContextOptions<AppDBContext> options) : base(options)
     {

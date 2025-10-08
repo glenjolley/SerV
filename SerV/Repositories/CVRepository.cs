@@ -21,6 +21,7 @@ public class CVRepository : ICVRepository
                 cv => cv.Experiences
                     .OrderByDescending(ex => ex.DateStarted)
                 )
+            .ThenInclude(ex => ex.Responsibilities)
             .Include(
                 cv => cv.Educations
                     .OrderBy(ed => ed.YearEnded)

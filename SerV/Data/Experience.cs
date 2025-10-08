@@ -6,6 +6,7 @@ public class Experience
     public string Company { get; set; }
     public string Role { get; set; }
     public string Description { get; set; }
+    public List<ExperienceResponsibility> Responsibilities { get; set; }
     public DateTime DateStarted { get; set; }
     public DateTime? DateEnded { get; set; }
 }
